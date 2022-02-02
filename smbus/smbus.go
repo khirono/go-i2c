@@ -3,7 +3,7 @@ package smbus
 import (
 	"unsafe"
 
-	"go-i2c"
+	"github.com/khirono/go-i2c"
 )
 
 // S     (1 bit) : Start bit
