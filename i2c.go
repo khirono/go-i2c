@@ -69,5 +69,8 @@ func (f *File) Ioctl(cmd int, msg uintptr) error {
 		uintptr(cmd),
 		msg,
 	)
+	if e == 0 {
+		return nil
+	}
 	return e
 }
